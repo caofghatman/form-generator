@@ -1,0 +1,15 @@
+form_design:
+    resource: "@FormDesignBundle/Resources/config/routing.yml"
+    prefix:   /
+
+form_generate:
+    resource: "@FormGenerateBundle/Resources/config/routing.yml"
+    prefix:   /
+
+form:
+    resource: "@FormBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

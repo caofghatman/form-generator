@@ -1,0 +1,18 @@
+version: '2'
+services:
+    app:
+        container_name: "form-generator"
+        image: "phpmentors/symfony-app:php70"
+        network_mode: "bridge"
+        volumes:
+            - ".:/var/app"
+        ports:
+            - "8001:80"
+        external_links:
+            - mysql56:mysql
+        environment:
+            TZ: "Asia/Tokyo"
+            LANG: "ja_JP.UTF-8"
+            PHP_INI: "docker/php.ini"
+            TERM: "xterm"
+            APP_INIT_SCRIPT: "docker/app-init"

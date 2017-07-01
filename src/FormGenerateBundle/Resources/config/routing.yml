@@ -1,0 +1,3 @@
+form_generate_homepage:
+    path:     /
+    defaults: { _controller: FormGenerateBundle:Default:index }
